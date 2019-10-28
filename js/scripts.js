@@ -6,8 +6,16 @@ $(document).ready(function(){
     var answer4 = $('input#answer4').val();
     var answer5 = $('input#answer5').val();
 
-    var answers = [answer1, answer2, answer3, answer4, answer5]
+    var answers = [answer1, answer2, answer3, answer4, answer5];
+    var newArray = [];
     event.preventDefault();
-    console.log(answers)
+  // newArray.push(answers);
+    newArray.push(answers[1]);
+    newArray.push(answers[0]);
+    newArray.push(answers[2]);
+    $(".arrayOutput").prepend
+    ("<li>" + newArray + "</li>");
+
+
   });
 })
